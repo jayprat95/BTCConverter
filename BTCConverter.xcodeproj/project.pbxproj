@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A65F460D96EC62788D96307 /* Pods_BTCConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722C28E17298FE6D36272982 /* Pods_BTCConverter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F65E6A5D1BC3F7BA008D2A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E6A5C1BC3F7BA008D2A75 /* AppDelegate.swift */; };
 		F65E6A5F1BC3F7BA008D2A75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65E6A5E1BC3F7BA008D2A75 /* ViewController.swift */; };
 		F65E6A621BC3F7BA008D2A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65E6A601BC3F7BA008D2A75 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1613E5C5E3F58F271C48D324 /* Pods-BTCConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTCConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTCConverter/Pods-BTCConverter.release.xcconfig"; sourceTree = "<group>"; };
+		722C28E17298FE6D36272982 /* Pods_BTCConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTCConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C218D1C6A91FB5E7FDB79C8E /* Pods-BTCConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTCConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTCConverter/Pods-BTCConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		F65E6A591BC3F7BA008D2A75 /* BTCConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65E6A5C1BC3F7BA008D2A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F65E6A5E1BC3F7BA008D2A75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A65F460D96EC62788D96307 /* Pods_BTCConverter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F58A2239365A7FD454CCF73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C218D1C6A91FB5E7FDB79C8E /* Pods-BTCConverter.debug.xcconfig */,
+				1613E5C5E3F58F271C48D324 /* Pods-BTCConverter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F65E6A501BC3F7BA008D2A75 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				F65E6A701BC3F7BA008D2A75 /* BTCConverterTests */,
 				F65E6A7B1BC3F7BA008D2A75 /* BTCConverterUITests */,
 				F65E6A5A1BC3F7BA008D2A75 /* Products */,
+				1F58A2239365A7FD454CCF73 /* Pods */,
+				F81E8DF10823722D661589DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = BTCConverterUITests;
 			sourceTree = "<group>";
 		};
+		F81E8DF10823722D661589DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				722C28E17298FE6D36272982 /* Pods_BTCConverter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F65E6A811BC3F7BA008D2A75 /* Build configuration list for PBXNativeTarget "BTCConverter" */;
 			buildPhases = (
+				E1C2F79B2A558261B7A79044 /* Check Pods Manifest.lock */,
 				F65E6A551BC3F7BA008D2A75 /* Sources */,
 				F65E6A561BC3F7BA008D2A75 /* Frameworks */,
 				F65E6A571BC3F7BA008D2A75 /* Resources */,
+				B644E7B06828A3EAD79124D1 /* Embed Pods Frameworks */,
+				560C78F5A83E9C46ACF2BE02 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +276,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		560C78F5A83E9C46ACF2BE02 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTCConverter/Pods-BTCConverter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B644E7B06828A3EAD79124D1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTCConverter/Pods-BTCConverter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C2F79B2A558261B7A79044 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F65E6A551BC3F7BA008D2A75 /* Sources */ = {
@@ -394,8 +469,10 @@
 		};
 		F65E6A821BC3F7BA008D2A75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C218D1C6A91FB5E7FDB79C8E /* Pods-BTCConverter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BTCConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TT.BTCConverter;
@@ -405,8 +482,10 @@
 		};
 		F65E6A831BC3F7BA008D2A75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1613E5C5E3F58F271C48D324 /* Pods-BTCConverter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BTCConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TT.BTCConverter;
@@ -481,6 +560,7 @@
 				F65E6A831BC3F7BA008D2A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F65E6A841BC3F7BA008D2A75 /* Build configuration list for PBXNativeTarget "BTCConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +569,7 @@
 				F65E6A861BC3F7BA008D2A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F65E6A871BC3F7BA008D2A75 /* Build configuration list for PBXNativeTarget "BTCConverterUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +578,7 @@
 				F65E6A891BC3F7BA008D2A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

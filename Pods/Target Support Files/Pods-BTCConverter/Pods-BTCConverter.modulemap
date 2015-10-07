@@ -1,0 +1,6 @@
+framework module Pods_BTCConverter {
+  umbrella header "Pods-BTCConverter-umbrella.h"
+
+  export *
+  module * { export * }
+}
